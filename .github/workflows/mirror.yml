@@ -1,0 +1,38 @@
+name: Καθρέφτης αγκυρών (mirror anchors)
+
+# Κάθε μέρα 05:30 UTC (08:30 Ελλάδα), 40 λεπτά μετά την άγκυρα της ημέρας (04:50 UTC). Τρέχει στους servers του GitHub.
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Κατέβασμα νέων αγκυρών
+        env:
+          AVI_BASE_URL: ${{ vars.AVI_BASE_URL || 'https://ai-visibility-index-livid.vercel.app' }}
+        run: python3 -I scripts/mirror.py
+      - name: Commit (μόνο αν ήρθε κάτι νέο)
+        run: |
+          git add -A anchors index.json
+          if git diff --cached --quiet; then
+            echo "nothing new"
+            exit 0
+          fi
+          git config user.name "avi-seals mirror"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "mirror: $(date -u +%Y-%m-%d) — $(git diff --cached --name-only | grep -c 'meta.json' || true) new anchor(s)"
+          git push
