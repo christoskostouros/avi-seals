@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T13:22:23.378Z",
+  "generated_at": "2026-10-13T12:50:09.737Z",
   "tsas": [
     {
       "key": "freetsa",
@@ -13,6 +13,27 @@
     }
   ],
   "anchors": [
+    {
+      "id": 3,
+      "created_at": "2026-10-13T04:50:01.644882+00:00",
+      "cohort_count": 45,
+      "list_sha256": "59577f178a03a51193de8ec8df9d04b7e6c0814e83da91600178225e84404ee4",
+      "files": {
+        "list": "/methodology/seals/3/list.txt",
+        "tokens": [
+          {
+            "tsa": "freetsa",
+            "gen_time": "2026-10-13T04:50:01Z",
+            "file": "/methodology/seals/3/freetsa.tst"
+          },
+          {
+            "tsa": "digicert",
+            "gen_time": "2026-10-13T04:50:01Z",
+            "file": "/methodology/seals/3/digicert.tst"
+          }
+        ]
+      }
+    },
     {
       "id": 2,
       "created_at": "2026-10-12T04:50:01.677715+00:00",
