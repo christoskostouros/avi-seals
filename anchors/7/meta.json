@@ -1,0 +1,21 @@
+{
+  "id": 7,
+  "created_at": "2026-10-17T04:50:01.65975+00:00",
+  "cohort_count": 44,
+  "list_sha256": "a121921f5f6ac4337a8656b49ddac2478dded45835a0d5b0c02818aeca968c5c",
+  "tokens": [
+    {
+      "tsa": "freetsa",
+      "gen_time": "2026-10-17T04:50:01Z",
+      "file": "freetsa.tst",
+      "sha256": "38a6a17670efb4d14cdc167ac3878e3940c3e9bad083226e1fdff4392d7a9430"
+    },
+    {
+      "tsa": "digicert",
+      "gen_time": "2026-10-17T04:50:01Z",
+      "file": "digicert.tst",
+      "sha256": "61b8242e88ab44964b594935fc329ad5b6acae28eb4e00bdcf4f89e9aff97da6"
+    }
+  ],
+  "source": "https://ai-visibility-index-livid.vercel.app"
+}
