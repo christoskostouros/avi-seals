@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T15:33:12.040Z",
+  "generated_at": "2026-11-28T14:24:51.532Z",
   "tsas": [
     {
       "key": "freetsa",
@@ -13,6 +13,48 @@
     }
   ],
   "anchors": [
+    {
+      "id": 43,
+      "created_at": "2026-11-28T04:50:06.861378+00:00",
+      "cohort_count": 116,
+      "list_sha256": "dde706c28cc3e54695b8299c9dc392dd84f42cd4de9c98dd49f2e31e523e243f",
+      "files": {
+        "list": "/methodology/seals/43/list.txt",
+        "tokens": [
+          {
+            "tsa": "freetsa",
+            "gen_time": "2026-11-28T04:50:06Z",
+            "file": "/methodology/seals/43/freetsa.tst"
+          },
+          {
+            "tsa": "digicert",
+            "gen_time": "2026-11-28T04:50:06Z",
+            "file": "/methodology/seals/43/digicert.tst"
+          }
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "created_at": "2026-11-27T04:50:02.488641+00:00",
+      "cohort_count": 122,
+      "list_sha256": "b50f39d5f220e080c789ac82cd492748e1eb30c1896051bdf2e579a688cd23b0",
+      "files": {
+        "list": "/methodology/seals/42/list.txt",
+        "tokens": [
+          {
+            "tsa": "freetsa",
+            "gen_time": "2026-11-27T04:50:02Z",
+            "file": "/methodology/seals/42/freetsa.tst"
+          },
+          {
+            "tsa": "digicert",
+            "gen_time": "2026-11-27T04:50:02Z",
+            "file": "/methodology/seals/42/digicert.tst"
+          }
+        ]
+      }
+    },
     {
       "id": 41,
       "created_at": "2026-11-26T04:50:02.766082+00:00",
